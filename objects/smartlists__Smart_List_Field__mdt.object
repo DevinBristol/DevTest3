@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>smartlists__Badge_Style_Field__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>API name of the formula field returning the background and text color of the badge</inlineHelpText>
+        <label>Badge Style Field</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>smartlists__Column_Width__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Width of the column in pixels. If left empty, the width is automatically determined by the system</inlineHelpText>
+        <label>Column Width</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>smartlists__Default_Sort_Field__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Field used for sorting the list when it is displayed. for the first time</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Default Sort Field</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>smartlists__Display_Order__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Position of the field in the list from lowest to greatest</inlineHelpText>
+        <label>Display Order</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>smartlists__Display_Position__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Position of the field in the list from lowest to greatest</inlineHelpText>
+        <label>Display Position in List</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>smartlists__Display_Position_in_Quick_Filters__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Position of the field in the Filters Panel from lowest to greatest. If not specified, the display position is determined by the display position in the list</inlineHelpText>
+        <label>Display Position in Filters Panel</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>smartlists__Display_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Display type of the field. Required with Apex Data Source lists. 
+File Preview can only be used with Files lists.</inlineHelpText>
+        <label>Display Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>BOOLEAN</fullName>
+                    <default>false</default>
+                    <label>Boolean</label>
+                </value>
+                <value>
+                    <fullName>CURRENCY</fullName>
+                    <default>false</default>
+                    <label>Currency</label>
+                </value>
+                <value>
+                    <fullName>DATE</fullName>
+                    <default>false</default>
+                    <label>Date</label>
+                </value>
+                <value>
+                    <fullName>DATETIME</fullName>
+                    <default>false</default>
+                    <label>Datetime</label>
+                </value>
+                <value>
+                    <fullName>DOUBLE</fullName>
+                    <default>false</default>
+                    <label>Double</label>
+                </value>
+                <value>
+                    <fullName>EMAIL</fullName>
+                    <default>false</default>
+                    <label>Email</label>
+                </value>
+                <value>
+                    <fullName>FILE_PREVIEW</fullName>
+                    <default>false</default>
+                    <label>File Preview</label>
+                </value>
+                <value>
+                    <fullName>HTML</fullName>
+                    <default>false</default>
+                    <label>Html</label>
+                </value>
+                <value>
+                    <fullName>HYPERLINK_DETAIL</fullName>
+                    <default>false</default>
+                    <label>Hyperlink to Detail</label>
+                </value>
+                <value>
+                    <fullName>INTEGER</fullName>
+                    <default>false</default>
+                    <label>Integer</label>
+                </value>
+                <value>
+                    <fullName>LOCATION</fullName>
+                    <default>false</default>
+                    <label>Location</label>
+                </value>
+                <value>
+                    <fullName>PERCENT</fullName>
+                    <default>false</default>
+                    <label>Percent</label>
+                </value>
+                <value>
+                    <fullName>PHONE</fullName>
+                    <default>false</default>
+                    <label>Phone</label>
+                </value>
+                <value>
+                    <fullName>PICKLIST</fullName>
+                    <default>false</default>
+                    <label>Picklist</label>
+                </value>
+                <value>
+                    <fullName>STRING</fullName>
+                    <default>false</default>
+                    <label>String</label>
+                </value>
+                <value>
+                    <fullName>TIME</fullName>
+                    <default>false</default>
+                    <label>Time</label>
+                </value>
+                <value>
+                    <fullName>URL</fullName>
+                    <default>false</default>
+                    <label>URL</label>
+                </value>
+                <value>
+                    <fullName>URL_LABEL</fullName>
+                    <default>false</default>
+                    <label>URL with Label</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>smartlists__Display_as_Badge__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>If checked, the field will be rendered as a badge</inlineHelpText>
+        <label>Display as Badge</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>smartlists__Field_Label__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Enter a text value or $Label­.CustomLabelName or leave blank.
+Required with Apex Data Source lists.
+With Files and SOQL lists, the label of the database field is used if left blank</inlineHelpText>
+        <label>Field Label</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>smartlists__Field_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>With SOQL and Files lists, API name of the field. Can include a reference to a parent object: Owner.Name or ProductType__r.Subtype__c
+
+Field name for Apex Data Source</inlineHelpText>
+        <label>Field Name</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>smartlists__File_Edit__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Used with Files lists only. If checked, the field is displayed in the File Edit Form.</inlineHelpText>
+        <label>Editable in File Edit Form</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Editable</fullName>
+                    <default>false</default>
+                    <label>Editable</label>
+                </value>
+                <value>
+                    <fullName>EditableRequired</fullName>
+                    <default>false</default>
+                    <label>Editable and required</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>smartlists__Filterable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>This field is deprecated: Use Display in Quick Filters instead
+The field is filterable in the quick filters. Only used with Apex Data Source</inlineHelpText>
+        <label>Filterable (Deprecated)</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>smartlists__Hyperlink_to_Detail_Id_Field__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Only used if Display Type = Hyperlink to Detail.
+Field of the record containing the Id of the target record.
+For SOQL and Files list, enter a value if you don&apos;t want to use the default value
+Required for Apex Data Source.</inlineHelpText>
+        <label>Hyperlink to Detail Id Field</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>smartlists__List_Field__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>If checked, the field is displayed in the list.
+Leave unchecked if you don&apos;t want to display the field in the list but want to display it in the Quick Filters or in the File Edit Form</inlineHelpText>
+        <label>Display in List</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>smartlists__Lookup_Subtitle_Field__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Field that is displayed in the lookup search in addition to Name
+Must be a Text field</inlineHelpText>
+        <label>Lookup Subtitle Field</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>smartlists__Lookup_in_Quick_Filters__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>If checked, the filter is displayed as a lookup in the Filters Panel. Otherwise, it is displayed as text field
+Examples for Account.Name on Cases list:
+- if checked and user picks the Edge Corp. account, the search will return all cases related to this account.
+- If unchecked and user enters Acme in the text field, the search will return all the cases related to accounts containing Acme in their name: Acme Corp., Acme Construction
+Only available for related fields of type Text</inlineHelpText>
+        <label>Lookup in Filters Panel</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>smartlists__Quick_Filters_Field__c</fullName>
+        <defaultValue>&apos;Yes if Filterable&apos;</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>If &apos;Yes if Filterable&apos; is selected, the field will be added to the Filters Panel if it is filterable at the object level. Some fields are not filterable because of their data type or because they are encrypted with the probabilistic algorithm</inlineHelpText>
+        <label>Display in Filters Panel</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes if Filterable</fullName>
+                    <default>true</default>
+                    <label>Yes if Filterable</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>smartlists__Smart_List_Definition__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Smart List Definition</label>
+        <referenceTo>smartlists__Smart_List_Definition__mdt</referenceTo>
+        <relationshipLabel>Smart List Fields</relationshipLabel>
+        <relationshipName>Smart_List_Fields</relationshipName>
+        <required>true</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>smartlists__Sortable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>This field is deprecated: Use Sortable in list instead
+The field is sortable in the list. Only used with Apex Data Source</inlineHelpText>
+        <label>Sortable (Deprecated)</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>smartlists__Sortable_in_List__c</fullName>
+        <defaultValue>&apos;Yes if Sortable&apos;</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>if &apos;Yes if Sortable&apos; is selected, the field will be sortable in the list if the data type of the field is sortable in Salesforce. Example: Text is sortable and Text Area Long is not</inlineHelpText>
+        <label>Sortable in List</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes if Sortable</fullName>
+                    <default>true</default>
+                    <label>Yes if Sortable</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>smartlists__Tile_Header__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>If checked, the field is part of the Tite header, otherwise it is part of the tile content</inlineHelpText>
+        <label>Display in Tile Header</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>smartlists__URL_Value__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>URL Value</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>smartlists__Wrap_Text__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>If checked, the row will be expanded to display the content of the cell on several lines. Otherwise, the content of the cell is clipped to the size of the column</inlineHelpText>
+        <label>Wrap Text</label>
+        <type>Checkbox</type>
+    </fields>
+    <label>Smart List Field</label>
+    <listViews>
+        <fullName>smartlists__All</fullName>
+        <columns>smartlists__Smart_List_Definition__c</columns>
+        <columns>MasterLabel</columns>
+        <columns>DeveloperName</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <pluralLabel>Smart List Fields</pluralLabel>
+    <validationRules>
+        <fullName>smartlists__Check_Badge_Style_Field</fullName>
+        <active>true</active>
+        <errorConditionFormula>smartlists__Display_as_Badge__c = true &amp;&amp;  ISBLANK( smartlists__Badge_Style_Field__c )</errorConditionFormula>
+        <errorDisplayField>smartlists__Badge_Style_Field__c</errorDisplayField>
+        <errorMessage>Badge Style Field is required if the field is displayed as a Badge</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>smartlists__Check_Display_Position</fullName>
+        <active>true</active>
+        <errorConditionFormula>smartlists__List_Field__c == true &amp;&amp; ISBLANK(smartlists__Display_Position__c)</errorConditionFormula>
+        <errorDisplayField>smartlists__Display_Position__c</errorDisplayField>
+        <errorMessage>Display Position is required for List fields</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>smartlists__Check_Display_Position_QuickFilters</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL( smartlists__Quick_Filters_Field__c, &apos;Yes if Filterable&apos; ) &amp;&amp; ISBLANK( smartlists__Display_Position_in_Quick_Filters__c )</errorConditionFormula>
+        <errorDisplayField>smartlists__Display_Position_in_Quick_Filters__c</errorDisplayField>
+        <errorMessage>Display Position is required for Filters Panel fields</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>smartlists__Check_Display_Type_Picklist</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL(smartlists__Smart_List_Definition__r.smartlists__Data_Source_Type__c, &apos;Apex Data Source&apos;) &amp;&amp; ISPICKVAL(smartlists__Display_Type__c, &apos;Picklist&apos;)</errorConditionFormula>
+        <errorDisplayField>smartlists__Display_Type__c</errorDisplayField>
+        <errorMessage>Picklist is not supported for Apex Data Source lists.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>smartlists__Check_Display_Type_Required</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL(smartlists__Smart_List_Definition__r.smartlists__Data_Source_Type__c, &apos;Apex Data Source&apos;) &amp;&amp; ISPICKVAL(smartlists__Display_Type__c, &apos;&apos;)</errorConditionFormula>
+        <errorDisplayField>smartlists__Display_Type__c</errorDisplayField>
+        <errorMessage>Display Type is required for Apex Data Source lists.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>smartlists__Check_Field_Label</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL(smartlists__Smart_List_Definition__r.smartlists__Data_Source_Type__c, &apos;Apex Data Source&apos;) &amp;&amp; ISBLANK(smartlists__Field_Label__c)</errorConditionFormula>
+        <errorDisplayField>smartlists__Field_Label__c</errorDisplayField>
+        <errorMessage>Field Label is required for Apex Data Source lists.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>smartlists__Check_File_Preview</fullName>
+        <active>true</active>
+        <errorConditionFormula>NOT ISPICKVAL(smartlists__Smart_List_Definition__r.smartlists__Data_Source_Type__c, &apos;Files&apos;) &amp;&amp; ISPICKVAL(smartlists__Display_Type__c, &apos;FILE_PREVIEW&apos;)</errorConditionFormula>
+        <errorDisplayField>smartlists__Display_Type__c</errorDisplayField>
+        <errorMessage>&apos;File Preview&apos; can only be used with Files list</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>smartlists__Check_Hyperlink_To_Detail</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL (smartlists__Smart_List_Definition__r.smartlists__Data_Source_Type__c, &apos;Apex Data Source&apos; ) &amp;&amp; ISPICKVAL(smartlists__Display_Type__c, &apos;HYPERLINK_DETAIL&apos;) &amp;&amp; ISBLANK(smartlists__Hyperlink_to_Detail_Id_Field__c)</errorConditionFormula>
+        <errorDisplayField>smartlists__Hyperlink_to_Detail_Id_Field__c</errorDisplayField>
+        <errorMessage>Hyperlink to Detail Id Field is required when Display Type is Hyperlink to Detail for an Apex Data Source</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>smartlists__Check_Lookup_Subtitle</fullName>
+        <active>true</active>
+        <errorConditionFormula>CONTAINS( smartlists__Lookup_Subtitle_Field__c , &apos;.&apos;)</errorConditionFormula>
+        <errorDisplayField>smartlists__Lookup_Subtitle_Field__c</errorDisplayField>
+        <errorMessage>Lookup Subtitle cannot be a related field such as Account.Name</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>smartlists__Check_Lookup_on_Related_Field</fullName>
+        <active>true</active>
+        <errorConditionFormula>smartlists__Lookup_in_Quick_Filters__c &amp;&amp; !CONTAINS( smartlists__Field_Name__c , &apos;.&apos;) &amp;&amp; smartlists__Field_Name__c != &apos;Owner&apos;</errorConditionFormula>
+        <errorDisplayField>smartlists__Lookup_in_Quick_Filters__c</errorDisplayField>
+        <errorMessage>Lookup in Quick Filters is only available for related fields such as Account.Name or for Owner</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>smartlists__Check_URL_Value</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK( smartlists__URL_Value__c ) &amp;&amp;  ISPICKVAL( smartlists__Display_Type__c , &apos;URL_LABEL&apos;)</errorConditionFormula>
+        <errorDisplayField>smartlists__URL_Value__c</errorDisplayField>
+        <errorMessage>URL Value is required for Display Type &apos;URL with Label&apos;</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

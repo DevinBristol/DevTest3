@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddTask</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddTask</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddTask</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Visit_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Visit_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>Visit_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Visit_Compact_Layout</fullName>
+        <fields>Visit_Name__c</fields>
+        <fields>PlaceId</fields>
+        <fields>PlannedVisitStartTime</fields>
+        <fields>Visit_Type__c</fields>
+        <fields>Visit_Result__c</fields>
+        <fields>Visit_Result_2__c</fields>
+        <label>Visit Compact Layout</label>
+    </compactLayouts>
+    <enableFeeds>false</enableFeeds>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ActualVisitEndTime</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ActualVisitStartTime</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>AddressId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ContactId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ContextId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>InstructionDescription</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>LocationId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Visits Related to an Oppty</inlineHelpText>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Visits</relationshipLabel>
+        <relationshipName>Visits</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PlaceId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PlannedVisitEndTime</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>PlannedVisitStartTime</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>RetailStoreId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ServiceResourceId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>StatusRemarks</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>UserId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>VisitPriority</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>VisitTypeId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Visit_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT (Visit_Type__c) &amp; &quot; - &quot; &amp; TEXT(MONTH(DATEVALUE(PlannedVisitStartTime))) + &quot;/&quot; + TEXT(DAY(DATEVALUE(PlannedVisitStartTime))) + &quot;/&quot; + TEXT(YEAR(DATEVALUE(PlannedVisitStartTime))) +
+IF(NOT(ISBLANK(Opportunity__c)) ,&quot; - &quot; &amp; Opportunity__r.Property__r.Street, NULL) + &quot; - &quot; + Account.AccountName__c</formula>
+        <label>Visit Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Visit_Result_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Visit Result 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Visit_Result__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetName>Result_Level_2</valueSetName>
+            <valueSettings>
+                <controllingFieldValue>Pending</controllingFieldValue>
+                <valueName>Pending</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Canceled</controllingFieldValue>
+                <controllingFieldValue>No Demo</controllingFieldValue>
+                <valueName>Unqualified</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Canceled</controllingFieldValue>
+                <controllingFieldValue>No Demo</controllingFieldValue>
+                <valueName>No Interest</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Canceled</controllingFieldValue>
+                <controllingFieldValue>No Demo</controllingFieldValue>
+                <valueName>Unreachable</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Canceled</controllingFieldValue>
+                <controllingFieldValue>No Demo</controllingFieldValue>
+                <controllingFieldValue>Demo / No Sale</controllingFieldValue>
+                <valueName>Follow Up</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Canceled</controllingFieldValue>
+                <controllingFieldValue>No Demo</controllingFieldValue>
+                <valueName>Re/Set</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Canceled</controllingFieldValue>
+                <controllingFieldValue>No Demo</controllingFieldValue>
+                <controllingFieldValue>Demo / No Sale</controllingFieldValue>
+                <valueName>Closed / Lost</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Closed / Won</controllingFieldValue>
+                <valueName>Cash</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Closed / Won</controllingFieldValue>
+                <valueName>Finance</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Visit_Result_3__c</fullName>
+        <description>The third tier of Visit Result. The higher the tier the more granular the reason.</description>
+        <externalId>false</externalId>
+        <label>Visit Result 3</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Visit_Result_2__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetName>Result_Level_3</valueSetName>
+            <valueSettings>
+                <controllingFieldValue>Cash</controllingFieldValue>
+                <valueName>Paid</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cash</controllingFieldValue>
+                <valueName>Pickup Check</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unqualified</controllingFieldValue>
+                <valueName>Renter</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unqualified</controllingFieldValue>
+                <valueName>Minor</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unqualified</controllingFieldValue>
+                <valueName>Senior</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unqualified</controllingFieldValue>
+                <valueName>Deceased</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unqualified</controllingFieldValue>
+                <valueName>Out of Territory</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unqualified</controllingFieldValue>
+                <valueName>Can&apos;t Do</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unqualified</controllingFieldValue>
+                <valueName>New Windows</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unqualified</controllingFieldValue>
+                <valueName>Language Barrier</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unqualified</controllingFieldValue>
+                <controllingFieldValue>Closed / Lost</controllingFieldValue>
+                <valueName>Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Finance</controllingFieldValue>
+                <valueName>Nebraska Energy Loan</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Finance</controllingFieldValue>
+                <valueName>Personal</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Finance</controllingFieldValue>
+                <valueName>Zero Percent Card</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Finance</controllingFieldValue>
+                <valueName>Other Financing</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>No Interest</controllingFieldValue>
+                <valueName>Competitor Preference</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>No Interest</controllingFieldValue>
+                <valueName>Budget</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>No Interest</controllingFieldValue>
+                <valueName>Moving</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>No Interest</controllingFieldValue>
+                <valueName>General No Interest</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pending</controllingFieldValue>
+                <valueName>Pending</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unreachable</controllingFieldValue>
+                <valueName>No Time</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unreachable</controllingFieldValue>
+                <valueName>One Leg</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unreachable</controllingFieldValue>
+                <valueName>NCY</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unreachable</controllingFieldValue>
+                <valueName>No Show</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unreachable</controllingFieldValue>
+                <valueName>Bad Contact Info</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unreachable</controllingFieldValue>
+                <valueName>Non Responder</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Follow Up</controllingFieldValue>
+                <controllingFieldValue>Re/Set</controllingFieldValue>
+                <valueName>Visit Set</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Follow Up</controllingFieldValue>
+                <valueName>Call to Re/Set</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Follow Up</controllingFieldValue>
+                <valueName>Not Ready</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Closed / Lost</controllingFieldValue>
+                <valueName>DNC</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Closed / Lost</controllingFieldValue>
+                <valueName>Purchased Elsewhere</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Visit_Result__c</fullName>
+        <externalId>false</externalId>
+        <label>Visit Result</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Results_Level_1</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Visit_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Department</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Sale</fullName>
+                    <default>false</default>
+                    <label>Sale</label>
+                </value>
+                <value>
+                    <fullName>Serv</fullName>
+                    <default>false</default>
+                    <label>Serv</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>VisitorId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <listViews>
+        <fullName>All_Visit</fullName>
+        <columns>Visit_Name__c</columns>
+        <columns>PlannedVisitStartTime</columns>
+        <columns>Visit_Result__c</columns>
+        <columns>Visit_Result_2__c</columns>
+        <columns>Visit_Result_3__c</columns>
+        <columns>Account</columns>
+        <columns>Status</columns>
+        <columns>Owner</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RecordType</field>
+            <operation>equals</operation>
+            <value>Visit.Visit_Default</value>
+        </filters>
+        <filters>
+            <field>PlannedVisitStartTime</field>
+            <operation>greaterOrEqual</operation>
+            <value>THIS_YEAR</value>
+        </filters>
+        <filters>
+            <field>Visit_Result__c</field>
+            <operation>equals</operation>
+            <value>Pending</value>
+        </filters>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Visit_View</fullName>
+        <columns>Visit_Name__c</columns>
+        <columns>Status</columns>
+        <columns>PlannedVisitStartTime</columns>
+        <columns>PlannedVisitEndTime</columns>
+        <columns>Account</columns>
+        <columns>Name</columns>
+        <columns>Visit_Result__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RecordType</field>
+            <operation>equals</operation>
+            <value>Visit.Visit_Default</value>
+        </filters>
+        <label>Visit View</label>
+    </listViews>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Visit_Default</fullName>
+        <active>true</active>
+        <compactLayoutAssignment>Visit_Compact_Layout</compactLayoutAssignment>
+        <label>Visit Default</label>
+        <picklistValues>
+            <picklist>VisitPriority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Visit_Result_2__c</picklist>
+            <values>
+                <fullName>Cash</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed %2F Lost</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Interest</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Re%2FSet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unqualified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unreachable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Visit_Result_3__c</picklist>
+            <values>
+                <fullName>Bad Contact Info</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Budget</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Call to Re%2FSet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Can%27t Do</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Competitor Preference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Confirmed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DNC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deceased</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General No Interest</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Language Barrier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Minor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moving</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NCY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nebraska Energy Loan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Windows</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non Responder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Ready</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>One Leg</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Financing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Out of Territory</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Paid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Personal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pickup Check</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased Elsewhere</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Renter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Senior</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visit Set</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Zero Percent Card</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Visit_Result__c</picklist>
+            <values>
+                <fullName>Canceled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed %2F Won</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Demo %2F No Sale</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Visit_Type__c</picklist>
+            <values>
+                <fullName>Sale</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Serv</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Place</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PlannedVisitStartTime</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PlannedVisitEndTime</customTabListAdditionalFields>
+        <customTabListAdditionalFields>VisitPriority</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Visitor</customTabListAdditionalFields>
+        <excludedStandardButtons>NewFromDocument</excludedStandardButtons>
+        <excludedStandardButtons>RecommendAllActivities</excludedStandardButtons>
+        <excludedStandardButtons>RecommendAllActivitiesMobile</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>Place</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Status</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PlannedVisitStartTime</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PlannedVisitEndTime</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>VisitPriority</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Visitor</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Place</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Status</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PlannedVisitStartTime</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PlannedVisitEndTime</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>VisitPriority</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Visitor</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>Visit_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Place</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PlannedVisitStartTime</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Visitor</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

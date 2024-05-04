@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>devin@bristolnebraska.com</contactEmail>
+    <contactPhone>4022174741</contactPhone>
+    <label>CircleCiDevTest</label>
+    <oauthConfig>
+        <callbackUrl>http://localhost:1717/OauthRedirect</callbackUrl>
+        <certificate>MIIDjzCCAncCFHkx4T+N6LbSVD1Y2Ae5NBsJFtiMMA0GCSqGSIb3DQEBCwUAMIGDMQswCQYDVQQGEwJVUzERMA8GA1UECAwITmVicmFza2ExEDAOBgNVBAcMB0xpbmNvbG4xFzAVBgNVBAoMDkJyaXN0b2xXaW5kb3dzMQ4wDAYDVQQDDAVEZXZpbjEmMCQGCSqGSIb3DQEJARYXRGV2aW5vYnJpZW4xN0BnbWFpbC5jb20wHhcNMjQwNDEwMDYwMTE4WhcNMjUwNDEwMDYwMTE4WjCBgzELMAkGA1UEBhMCVVMxETAPBgNVBAgMCE5lYnJhc2thMRAwDgYDVQQHDAdMaW5jb2xuMRcwFQYDVQQKDA5CcmlzdG9sV2luZG93czEOMAwGA1UEAwwFRGV2aW4xJjAkBgkqhkiG9w0BCQEWF0Rldmlub2JyaWVuMTdAZ21haWwuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnyVDUzxZivd/qefBYFIiToiadDQk0sAi+zZV2LLa/BcOsO63b1pn5S98xpEWyUsOWBHnJjrgfTSrjHS3pyO2ytuZBMqbqHy2VT+S16qHnF6fnNmaX1JEWosPIJDLs9iURS9UzUSEtyQaj3iR92EenNZ8GdvKo5/VmbJhITU4HfDxtWvYPxJlpkMwIFZzVRelbfkKyPWbj6tYhtzSJGBJXfauxwmKRJtpJ6St6D592a4QshJuwG55YSJP2YdlXgNsVWqNRvAlH2FE/HrZLecwThDaAOiTEw7TbEMu/UkP68CufQNHvuSsNvK0+siSVnvBKkRpHw9/RJSfFkLqG/CHTwIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQCEmlhwkbwLreCmx70HxSUB++eDaGX5WFecdZvbcP1IDZNYu/9gmHVHh7t/dm2XzQp6iLiICBikKT61Z84X37j8vvtxuis0e6Xfbf9uvx1lRydzOzCj31HzyvgMni7hibSjOu3KOiAxeWhPPe9Woru7tdKaG5k5hfjHoq+GusFqGMdkcI06V3G9tKPxG3LueycWs4nWkoKOlKL6CNV2jT7uS7bGDMLWkOYQAp+8FsNVOi+I/tXM+JT49JYJuNhADFu+d3vNurSQ+kBo9MyTrpFVcBlxKq7ZC2ibanx8TK2C56zK5ej98jzHUIAdN22xtwHdqZyyjOX24xDRlQVVVDwJ</certificate>
+        <consumerKey>3MVG9CXa9eR3sUEDoTh5Yq2s3Uwfbk5ORGwcsl1.NuUiaOhsf7Env_TmvuMp3viybOoXzrcu0aYdMxUI3cz2k</consumerKey>
+        <isAdminApproved>true</isAdminApproved>
+        <isClientCredentialEnabled>false</isClientCredentialEnabled>
+        <isCodeCredentialEnabled>false</isCodeCredentialEnabled>
+        <isCodeCredentialPostOnly>false</isCodeCredentialPostOnly>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isNamedUserJwtEnabled>false</isNamedUserJwtEnabled>
+        <isPkceRequired>false</isPkceRequired>
+        <isRefreshTokenRotationEnabled>false</isRefreshTokenRotationEnabled>
+        <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
+        <isSecretRequiredForTokenExchange>false</isSecretRequiredForTokenExchange>
+        <isTokenExchangeEnabled>false</isTokenExchangeEnabled>
+        <scopes>Full</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <isTokenExchangeFlowEnabled>false</isTokenExchangeFlowEnabled>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+    <profileName>System Administrator</profileName>
+</ConnectedApp>

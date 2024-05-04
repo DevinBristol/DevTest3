@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>smartlists__Allowed_Extensions__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Comma separated list of allowed extensions for file upload. Example: txt,jpg,docx</inlineHelpText>
+        <label>Allowed Extensions</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>smartlists__Data_Provider_Class__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Data Provider class of the Apex Data Source.
+Must be global class implementing smartlists.SmartListApexSourceInterface2</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Data Provider Class</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>smartlists__Data_Source_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Data Source Type</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Apex Data Source</fullName>
+                    <default>false</default>
+                    <label>Apex Data Source</label>
+                </value>
+                <value>
+                    <fullName>Files</fullName>
+                    <default>false</default>
+                    <label>Files</label>
+                </value>
+                <value>
+                    <fullName>SOQL without Sharing</fullName>
+                    <default>false</default>
+                    <label>SOQL without Sharing</label>
+                </value>
+                <value>
+                    <fullName>SOQL with Sharing</fullName>
+                    <default>true</default>
+                    <label>SOQL with Sharing</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>smartlists__Default_Sort_Direction__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Default Sort Direction of the list</inlineHelpText>
+        <label>Default Sort Direction</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>asc</fullName>
+                    <default>true</default>
+                    <label>asc</label>
+                </value>
+                <value>
+                    <fullName>desc</fullName>
+                    <default>false</default>
+                    <label>desc</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>smartlists__Default_Sort_Field__c</fullName>
+        <defaultValue>&apos;CreatedDate&apos;</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Name of the field used for sorting the records</inlineHelpText>
+        <label>Default Sort Field (Deprecated)</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>smartlists__Disable_Autoload__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>If checked, no records are automatically loaded when the list is displayed for the first time
+If unchecked, records are automatically loaded when the list is displayed for the first time</inlineHelpText>
+        <label>Disable Autoload on Initialization</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>smartlists__Disable_Paging__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>If checked, the paging mode is disabled and all the records are loaded when the list is displayed for the first time or a search is made in the Filters panel</inlineHelpText>
+        <label>Disable Paging</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>smartlists__Display_Mode__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Display the list as Table or Tiles</inlineHelpText>
+        <label>Display Mode</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Table</fullName>
+                    <default>true</default>
+                    <label>Table</label>
+                </value>
+                <value>
+                    <fullName>Tiles</fullName>
+                    <default>false</default>
+                    <label>Tiles</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>smartlists__Display_Quick_Filters_All_the_Time__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Display the Filters Panel all the time. The panel cannot be closed</inlineHelpText>
+        <label>Display Filters Panel All the Time</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>smartlists__Enable_CRUD_Actions__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>If checked, New, Edit and Delete record actions are available in the list if the running user has the corresponding permissions on the object</inlineHelpText>
+        <label>Enable all Record Actions</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>smartlists__Enable_Delete_Record_Action__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The Delete record action is displayed if the running user has Delete right on the object.
+This property is only considered when Enable all Record Actions is not checked</inlineHelpText>
+        <label>Enable Delete Record Action</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>smartlists__Enable_Edit_Record_Action__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The Edit record action is displayed if the running user has Edit right on the object.
+This property is only considered when Enable all Record Actions is not checked</inlineHelpText>
+        <label>Enable Edit Record Action</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>smartlists__Enable_New_Record_Action__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The New record action is displayed if the running user has Create right on the object.
+This property is only considered when Enable all Record Actions is not checked</inlineHelpText>
+        <label>Enable New Record Action</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>smartlists__Filters_Max_Height__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Maximum display height in pixels of the filters. A scrollbar will be displayed in the Filters Panel if the height of the filters is greater that this value.
+Leave empty if you don&apos;t want to limit the display height of the filters</inlineHelpText>
+        <label>Filters Panel Max Height</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>smartlists__Filters_Panel_Layout__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Specifies if the Filters Panel is displayed on the right or the left of the list and if a user action is needed to display/hide it.
+On Demand: users needs to click the Show Filters button to display the panel.
+All the Time: the panel is always displayed and cannot be hidden</inlineHelpText>
+        <label>Filters Panel Layout</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>RightOD</fullName>
+                    <default>true</default>
+                    <label>Right - On Demand</label>
+                </value>
+                <value>
+                    <fullName>RightAT</fullName>
+                    <default>false</default>
+                    <label>Right - All the Time</label>
+                </value>
+                <value>
+                    <fullName>LeftOD</fullName>
+                    <default>false</default>
+                    <label>Left - On Demand</label>
+                </value>
+                <value>
+                    <fullName>LeftAT</fullName>
+                    <default>false</default>
+                    <label>Left - All the Time</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>smartlists__List_Icon__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>If empty, Smart Lists will try to determine the icon from the SObject. If you want to use your own icon, enter the name of a SLDS icon.
+Required for Apex Data Sources without SObject.</inlineHelpText>
+        <label>List Icon</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>smartlists__List_Label__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>If empty, the list label will be the plural label of the SObject: Cases for Case,
+If you want to use your own label, enter a text value or $Label­.CustomLabelName.
+Required for Apex Data Sources without SObject.</inlineHelpText>
+        <label>List Label</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>smartlists__Max_Row_Selected__c</fullName>
+        <defaultValue>2000</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Maximum number of rows that can be selected in the list</inlineHelpText>
+        <label>Max Row Selected</label>
+        <precision>4</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>smartlists__Maximum_Number_of_Records__c</fullName>
+        <defaultValue>2000</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Maximum number of records displayed in the list</inlineHelpText>
+        <label>Maximum Number of Records</label>
+        <precision>4</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>smartlists__Number_of_Records_per_Page__c</fullName>
+        <defaultValue>10</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Number of Records per Page</label>
+        <precision>4</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>smartlists__Parent_Id_Field__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Field containing the Id of the parent record. Not used in Files lists
+Example: For a Cases list on an Account page, AccountId is used for retrieving Cases related to the parent account</inlineHelpText>
+        <label>Parent Id Field (Not for Files Lists)</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>smartlists__Parent_Key_Field__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>For indirect relationships (parent-child relationships not using the parent record id), API name of the field to be used as the parent key on the parent object.
+Example of indirect relationship: Case is the parent object and the list is displaying the Contacts related to the Account of the parent Case record -&gt; Parent Object = Case and Parent Key Field = AccountId</inlineHelpText>
+        <label>Indirect Relationship: Parent Key Field</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>smartlists__Parent_Object__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>For indirect relationships (parent-child relationships not using the parent record id), API name of the parent object
+Example of indirect relationship: Case is the parent object and the list is displaying the Contacts related to the Account of the parent Case record -&gt; Parent Object = Case and Parent Key Field = AccountId</inlineHelpText>
+        <label>Indirect Relationship: Parent Object (De</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>smartlists__Row_Key__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Field for identifying a unique row in the dataset returned by the Apex data source.</inlineHelpText>
+        <label>Row Key</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>smartlists__Row_Number_Start__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>First number of the rows counter</inlineHelpText>
+        <label>Row Number Start</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>smartlists__SOQL_Default_Scope__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Default Visibility Filter displayed in the Visibility Filters combobox of the list</inlineHelpText>
+        <label>Default Visibility Filter</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>everything</fullName>
+                    <default>true</default>
+                    <label>All</label>
+                </value>
+                <value>
+                    <fullName>mine</fullName>
+                    <default>false</default>
+                    <label>My</label>
+                </value>
+                <value>
+                    <fullName>team</fullName>
+                    <default>false</default>
+                    <label>My Team</label>
+                </value>
+                <value>
+                    <fullName>subordinates</fullName>
+                    <default>false</default>
+                    <label>My Subordinates</label>
+                </value>
+                <value>
+                    <fullName>queues</fullName>
+                    <default>false</default>
+                    <label>My Queues</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>smartlists__SOQL_Filter_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>SOQL Filter Type (Deprecated)</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>All</fullName>
+                    <default>true</default>
+                    <label>All</label>
+                </value>
+                <value>
+                    <fullName>My</fullName>
+                    <default>false</default>
+                    <label>My</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>smartlists__SOQL_Filter__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>SOQL filter used for querying the records. Example: Status = &apos;Open&apos;.
+Used for SOQL type only</inlineHelpText>
+        <label>SOQL Filter (Deprecated)</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>smartlists__SOQL_Scope_All__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Returns all records visible by the running user</inlineHelpText>
+        <label>Visibility Filter - All</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>smartlists__SOQL_Scope_My_Queues__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Returns records owned by queues the running user is part of</inlineHelpText>
+        <label>Visibility Filter - My Queues</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>smartlists__SOQL_Scope_My_Subordinates__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Returns records owned by the direct subodinates of the running user in the role hierarchy</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Visibility Filter - My Subordinates</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>smartlists__SOQL_Scope_My_Team__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Returns records owned by the running user or his subordinates in the role hierarchy. Make sure this scope is supported for the object (Equivalent of My Team filter in report). Cannot be selected if Show SOSL Search in Quick Filter is checked</inlineHelpText>
+        <label>Visibility Filter - My Team</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>smartlists__SOQL_Scope_My__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Returns records owned by the running user</inlineHelpText>
+        <label>Visibility Filter - My</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>smartlists__SObject__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>For SOQL with/with Sharing datasource, base SObject of the list
+For Apex datasource, SObject used for New, Edit and Delete</inlineHelpText>
+        <label>SObject</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>smartlists__Selectable_Rows__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Selectable Rows</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>smartlists__Show_List_Header__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Show Table Header</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>smartlists__Show_Row_Number_Column__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>If checked, the row numbers are shown in the first column</inlineHelpText>
+        <label>Show Row Number Column</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>smartlists__Show_SOSL_Search__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Display the SOSL Search box in the component or Filters Panel.
+Cannot be selected when the visibility filter My Team is selected</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Show SOSL Search</inlineHelpText>
+        <label>Show SOSL Search</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Filters</fullName>
+                    <default>true</default>
+                    <label>In Filters Panel</label>
+                </value>
+                <value>
+                    <fullName>Component</fullName>
+                    <default>false</default>
+                    <label>In Component</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>Not Displayed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>smartlists__Show_SOSL_Search_in_Quick_Filter__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Display the SOSL Search in the Filters widget.
+Can only be selected if the visibility filter My Team is not selected</inlineHelpText>
+        <label>Show SOSL Search in Filters (Deprecated)</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>smartlists__Tile_Layout__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Select tile layout: number of tiles per row x number of colums per tile.
+As an example, 2x2 means 2 tiles per row of the widget x 2 field colum per tile</inlineHelpText>
+        <label>Tile Layout</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1x1</fullName>
+                    <default>false</default>
+                    <label>1x1</label>
+                </value>
+                <value>
+                    <fullName>1x2</fullName>
+                    <default>false</default>
+                    <label>1x2</label>
+                </value>
+                <value>
+                    <fullName>1x3</fullName>
+                    <default>false</default>
+                    <label>1x3</label>
+                </value>
+                <value>
+                    <fullName>2x1</fullName>
+                    <default>false</default>
+                    <label>2x1</label>
+                </value>
+                <value>
+                    <fullName>2x2</fullName>
+                    <default>false</default>
+                    <label>2x2</label>
+                </value>
+                <value>
+                    <fullName>3x1</fullName>
+                    <default>true</default>
+                    <label>3x1</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>smartlists__Wrap_Text_Max_Lines__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Maximum number of text lines displayed in a cell when Wrap Text is enabled on a column</inlineHelpText>
+        <label>Wrap Text Max Lines</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Smart List Definition</label>
+    <pluralLabel>Smart List Definitions</pluralLabel>
+    <validationRules>
+        <fullName>smartlists__Check_Data_Provider</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL(smartlists__Data_Source_Type__c, &quot;Apex Data Source&quot;) &amp;&amp;
+ISBLANK(smartlists__Data_Provider_Class__c)</errorConditionFormula>
+        <errorDisplayField>smartlists__Data_Provider_Class__c</errorDisplayField>
+        <errorMessage>Data Provider Class is required for type &apos;	Apex Data Source&apos;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>smartlists__Check_Default_Scope</fullName>
+        <active>true</active>
+        <errorConditionFormula>(ISPICKVAL(smartlists__SOQL_Default_Scope__c, &apos;everything&apos;) &amp;&amp; ! smartlists__SOQL_Scope_All__c) || (ISPICKVAL(smartlists__SOQL_Default_Scope__c, &apos;mine&apos;) &amp;&amp; ! smartlists__SOQL_Scope_My__c) || (ISPICKVAL(smartlists__SOQL_Default_Scope__c, &apos;team&apos;) &amp;&amp; ! smartlists__SOQL_Scope_My_Team__c) || (ISPICKVAL(smartlists__SOQL_Default_Scope__c, &apos;subordinates&apos;) &amp;&amp; ! smartlists__SOQL_Scope_My_Subordinates__c )</errorConditionFormula>
+        <errorDisplayField>smartlists__SOQL_Default_Scope__c</errorDisplayField>
+        <errorMessage>The default filter is not one of the selected filters</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>smartlists__Check_Enable_All_CRUD_Actions</fullName>
+        <active>true</active>
+        <errorConditionFormula>smartlists__Enable_CRUD_Actions__c &amp;&amp; ( smartlists__Enable_Delete_Record_Action__c ||  smartlists__Enable_Edit_Record_Action__c ||  smartlists__Enable_New_Record_Action__c )</errorConditionFormula>
+        <errorDisplayField>smartlists__Enable_CRUD_Actions__c</errorDisplayField>
+        <errorMessage>Enable All Record Actions cannot be checked when individual record actions are selected</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>smartlists__Check_Enable_CRUD_Actions</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL(smartlists__Data_Source_Type__c, &quot;Files&quot;) &amp;&amp; (smartlists__Enable_CRUD_Actions__c ||  smartlists__Enable_Delete_Record_Action__c ||  smartlists__Enable_Edit_Record_Action__c ||  smartlists__Enable_New_Record_Action__c)</errorConditionFormula>
+        <errorDisplayField>smartlists__Enable_CRUD_Actions__c</errorDisplayField>
+        <errorMessage>Record actions cannot be enabled for Files Lists</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>smartlists__Check_Indirect_Relationship_FILES</fullName>
+        <active>false</active>
+        <errorConditionFormula>false</errorConditionFormula>
+        <errorDisplayField>smartlists__Parent_Object__c</errorDisplayField>
+        <errorMessage>Files datasource: Parent Object, Parent Key Field and Parent Id are required for an indirect relationship</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>smartlists__Check_Indirect_Relationship_SOQL_APEX</fullName>
+        <active>true</active>
+        <errorConditionFormula>(ISPICKVAL(smartlists__Data_Source_Type__c, &quot;Apex Data Source&quot;) || ISPICKVAL(smartlists__Data_Source_Type__c , &quot;SOQL with Sharing&quot;) ||ISPICKVAL(smartlists__Data_Source_Type__c , &quot;SOQL without Sharing&quot;)) &amp;&amp; 
+ !ISBLANK( smartlists__Parent_Key_Field__c ) &amp;&amp; ISBLANK( smartlists__Parent_Id_Field__c )</errorConditionFormula>
+        <errorDisplayField>smartlists__Parent_Id_Field__c</errorDisplayField>
+        <errorMessage>SOQL or APEX Data Source: Parent Key Field and Parent Id are required for an indirect relationship</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>smartlists__Check_Layout_For_Tiles</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL( smartlists__Display_Mode__c , &apos;Tiles&apos;) &amp;&amp;  ISPICKVAL( smartlists__Tile_Layout__c, &apos;&apos; )</errorConditionFormula>
+        <errorDisplayField>smartlists__Tile_Layout__c</errorDisplayField>
+        <errorMessage>Tile Layout is required when Display Mode is Tiles</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>smartlists__Check_List_Icon_APEX</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL(smartlists__Data_Source_Type__c, &quot;Apex Data Source&quot;) &amp;&amp; 
+ISBLANK(  smartlists__SObject__c ) &amp;&amp; ISBLANK(   smartlists__List_Icon__c   )</errorConditionFormula>
+        <errorDisplayField>smartlists__List_Icon__c</errorDisplayField>
+        <errorMessage>List Icon is required for APEX Data Source without SObject</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>smartlists__Check_List_Label_APEX</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL(smartlists__Data_Source_Type__c, &quot;Apex Data Source&quot;) &amp;&amp; 
+ISBLANK(  smartlists__SObject__c ) &amp;&amp; ISBLANK(  smartlists__List_Label__c  )</errorConditionFormula>
+        <errorDisplayField>smartlists__List_Label__c</errorDisplayField>
+        <errorMessage>List Label is required for APEX Data Source without SObject</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>smartlists__Check_Parent_Field</fullName>
+        <active>true</active>
+        <description>Obsolete</description>
+        <errorConditionFormula>ISPICKVAL(smartlists__Data_Source_Type__c, &quot;Apex Data Source with Parent&quot;) &amp;&amp;
+ ISBLANK( smartlists__Parent_Id_Field__c )</errorConditionFormula>
+        <errorDisplayField>smartlists__Parent_Id_Field__c</errorDisplayField>
+        <errorMessage>Parent Id Field is required for Apex Data Source with Parent</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>smartlists__Check_RowKey</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL(smartlists__Data_Source_Type__c, &quot;Apex Data Source&quot;) &amp;&amp;
+ISBLANK( smartlists__Row_Key__c )</errorConditionFormula>
+        <errorDisplayField>smartlists__Row_Key__c</errorDisplayField>
+        <errorMessage>Row Key is required for type &apos; Apex Data Source&apos;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>smartlists__Check_SObject</fullName>
+        <active>true</active>
+        <errorConditionFormula>(ISPICKVAL(smartlists__Data_Source_Type__c , &quot;SOQL with Sharing&quot;) ||ISPICKVAL(smartlists__Data_Source_Type__c , &quot;SOQL without Sharing&quot;)) &amp;&amp;
+ISBLANK(smartlists__SObject__c)</errorConditionFormula>
+        <errorDisplayField>smartlists__SObject__c</errorDisplayField>
+        <errorMessage>SObject is required for types &apos;SOQL with/without Sharing&apos;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>smartlists__Check_SObject_APEX</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL(smartlists__Data_Source_Type__c, &apos;Apex Data Source&apos;) &amp;&amp; ISBLANK( smartlists__SObject__c ) &amp;&amp; (smartlists__Enable_CRUD_Actions__c ||  smartlists__Enable_Delete_Record_Action__c ||  smartlists__Enable_Edit_Record_Action__c ||  smartlists__Enable_New_Record_Action__c)</errorConditionFormula>
+        <errorDisplayField>smartlists__SObject__c</errorDisplayField>
+        <errorMessage>SObject is required when record actions are enabled on an Apex Data Source</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>smartlists__Check_Show_Sosl_Search</fullName>
+        <active>false</active>
+        <errorConditionFormula>false</errorConditionFormula>
+        <errorDisplayField>smartlists__Show_SOSL_Search_in_Quick_Filter__c</errorDisplayField>
+        <errorMessage>Show SOQL Search in Quick Filter cannot be selected with the My Team records scope</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>smartlists__Check_Show_Sosl_Search_Picklist</fullName>
+        <active>true</active>
+        <errorConditionFormula>!ISPICKVAL( smartlists__Show_SOSL_Search__c , &apos;No&apos;) &amp;&amp; smartlists__SOQL_Scope_My_Team__c</errorConditionFormula>
+        <errorDisplayField>smartlists__Show_SOSL_Search__c</errorDisplayField>
+        <errorMessage>Show SOQL Search in Component or Filters Panel cannot be selected with the My Team visibility filter</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>smartlists__Check_Wrap_Text_Max_Lines</fullName>
+        <active>true</active>
+        <errorConditionFormula>smartlists__Wrap_Text_Max_Lines__c &lt;= 0</errorConditionFormula>
+        <errorDisplayField>smartlists__Wrap_Text_Max_Lines__c</errorDisplayField>
+        <errorMessage>Wrap Text Max Lines must be greater than 0</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

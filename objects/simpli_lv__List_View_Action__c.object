@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>simpli_lv__Apex_Class_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The apex class that this action calls. The apex class must implement the SimpliListViewsAction interface.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The apex class that this action calls. The apex class must implement the SimpliListViewsAction interface.</inlineHelpText>
+        <label>Apex Class Name</label>
+        <length>255</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>simpli_lv__Component_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>If the action is to be specific to an LWC component this holds that component name. If this field is blank then the action is available for all components.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If the action is to be specific to an LWC component this holds that component name. If this field is blank then the action is available for all components.</inlineHelpText>
+        <label>Component Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>simpli_lv__Flow_API_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Flow API Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>simpli_lv__Flow_Frame_Height__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Flow Frame Height</label>
+        <length>6</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>simpli_lv__Flow_Frame_Width__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Flow Frame Width</label>
+        <length>6</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>simpli_lv__Flow_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Flow Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Autolaunched Flow</fullName>
+                    <default>false</default>
+                    <label>Autolaunched Flow</label>
+                </value>
+                <value>
+                    <fullName>Screen Flow</fullName>
+                    <default>false</default>
+                    <label>Screen Flow</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>simpli_lv__Is_Active__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Is Active</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>simpli_lv__Is_Flow__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Is Flow</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>simpli_lv__Is_Hyperlink__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Identifies whether this action is a hyperlink. If this is checked an action parameter named &quot;URL&quot; must exist identifying the location that the user is sent to.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Identifies whether this action is a hyperlink. If this is checked an action parameter named &quot;URL&quot; must exist identifying the location that the user is sent to.</inlineHelpText>
+        <label>Is Hyperlink</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>simpli_lv__Label__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The label that is shown in the drop down action combobox on the list views page.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The label that is shown in the drop down action combobox on the list views page.</inlineHelpText>
+        <label>Label</label>
+        <length>255</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>simpli_lv__Mass_Create_List_View_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>If this action is a Mass Create action then this field holds the list view containing the fields that will be presented to the user. This field is not required. If no value is used the list view the user is currently using will be used.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If this action is a Mass Create action then this field holds the list view containing the fields that will be presented to the user. This field is not required. If no value is used the list view the user is currently using will be used.</inlineHelpText>
+        <label>Mass Create List View Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>simpli_lv__Object_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The API name of the object type that this action is associated with. If no type is specified the action is made available to all objects.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The API name of the object type that this action is associated with. If no type is specified the action is made available to all objects.</inlineHelpText>
+        <label>Object Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>simpli_lv__Permissions__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Identifies the permissions on the object that are required in order to complete the action. This is purely a hint to identify whether the actions should be displayed to the user on the page. It does not control object permissions.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Identifies the permissions on the object that are required in order to complete the action. This is purely a hint to identify whether the actions should be displayed to the user on the page. It does not control object permissions.</inlineHelpText>
+        <label>Permissions</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Read</fullName>
+                    <default>false</default>
+                    <label>Read</label>
+                </value>
+                <value>
+                    <fullName>Create</fullName>
+                    <default>false</default>
+                    <label>Create</label>
+                </value>
+                <value>
+                    <fullName>Edit</fullName>
+                    <default>false</default>
+                    <label>Edit</label>
+                </value>
+                <value>
+                    <fullName>Delete</fullName>
+                    <default>false</default>
+                    <label>Delete</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>simpli_lv__Primary_Key__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>The primary key of the action. This is a concatenation of the action object and the action label. This key is created when inserting an action and is used internally. Do not update this field manually.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The primary key of the action. This is a concatenation of the action object and the action label. This key is created when inserting an action and is used internally. Do not update this field manually.</inlineHelpText>
+        <label>Primary Key</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>simpli_lv__Selected_Record_Visibility__c</fullName>
+        <defaultValue>&quot;Always displayed&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates how many records need to be selected on a list view before the action becomes available.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates how many records need to be selected on a list view before the action becomes available.</inlineHelpText>
+        <label>Selected Record Visibility</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Always displayed</fullName>
+                    <default>false</default>
+                    <label>Always displayed</label>
+                </value>
+                <value>
+                    <fullName>Displayed if multiple records are selected</fullName>
+                    <default>false</default>
+                    <label>Displayed if multiple records are selected</label>
+                </value>
+                <value>
+                    <fullName>Displayed if no records are selected</fullName>
+                    <default>false</default>
+                    <label>Displayed if no records are selected</label>
+                </value>
+                <value>
+                    <fullName>Displayed if one or more records are selected</fullName>
+                    <default>false</default>
+                    <label>Displayed if one or more records are selected</label>
+                </value>
+                <value>
+                    <fullName>Displayed if one record is selected</fullName>
+                    <default>false</default>
+                    <label>Displayed if one record is selected</label>
+                </value>
+                <value>
+                    <fullName>Displayed if zero or one record is selected</fullName>
+                    <default>false</default>
+                    <label>Displayed if zero or one record is selected</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>simpli_lv__Subtype__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Indicates whether the action should only be displayed for specific list view types.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates whether the action should only be displayed for specific list view types.</inlineHelpText>
+        <label>Subtype</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Manual</fullName>
+                    <default>false</default>
+                    <label>Manual</label>
+                </value>
+                <value>
+                    <fullName>Tooling</fullName>
+                    <default>false</default>
+                    <label>Tooling</label>
+                </value>
+                <value>
+                    <fullName>Metadata</fullName>
+                    <default>false</default>
+                    <label>Metadata</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>List View Action</label>
+    <listViews>
+        <fullName>simpli_lv__All</fullName>
+        <columns>NAME</columns>
+        <columns>simpli_lv__Label__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>simpli_lv__Selected_Record_Visibility__c</columns>
+        <columns>simpli_lv__Apex_Class_Name__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>simpli_lv__Object_Type__c</columns>
+        <columns>simpli_lv__Is_Active__c</columns>
+        <columns>simpli_lv__Is_Hyperlink__c</columns>
+        <columns>simpli_lv__Permissions__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>simpli_lv__Primary_Key__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>simpli_lv__All_Custom_Actions</fullName>
+        <columns>NAME</columns>
+        <columns>simpli_lv__Label__c</columns>
+        <columns>simpli_lv__Selected_Record_Visibility__c</columns>
+        <columns>simpli_lv__Apex_Class_Name__c</columns>
+        <columns>simpli_lv__Object_Type__c</columns>
+        <columns>simpli_lv__Is_Active__c</columns>
+        <columns>simpli_lv__Is_Hyperlink__c</columns>
+        <columns>simpli_lv__Permissions__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>simpli_lv__Primary_Key__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>simpli_lv__List_View_Action__c.simpli_lv__Custom</value>
+        </filters>
+        <label>All Custom Actions</label>
+    </listViews>
+    <listViews>
+        <fullName>simpli_lv__All_Is_Hyperlink</fullName>
+        <columns>NAME</columns>
+        <columns>simpli_lv__Label__c</columns>
+        <columns>simpli_lv__Selected_Record_Visibility__c</columns>
+        <columns>simpli_lv__Apex_Class_Name__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>simpli_lv__Object_Type__c</columns>
+        <columns>simpli_lv__Is_Active__c</columns>
+        <columns>simpli_lv__Permissions__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>simpli_lv__Primary_Key__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>simpli_lv__Is_Hyperlink__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>All - Is Hyperlink</label>
+    </listViews>
+    <listViews>
+        <fullName>simpli_lv__All_Of_Type_Flow</fullName>
+        <columns>NAME</columns>
+        <columns>simpli_lv__Label__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>simpli_lv__Selected_Record_Visibility__c</columns>
+        <columns>simpli_lv__Apex_Class_Name__c</columns>
+        <columns>simpli_lv__Object_Type__c</columns>
+        <columns>simpli_lv__Is_Active__c</columns>
+        <columns>simpli_lv__Permissions__c</columns>
+        <columns>simpli_lv__Flow_API_Name__c</columns>
+        <columns>simpli_lv__Flow_Frame_Height__c</columns>
+        <columns>simpli_lv__Flow_Frame_Width__c</columns>
+        <columns>simpli_lv__Flow_Type__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>simpli_lv__Is_Flow__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>All Of Type Flow</label>
+    </listViews>
+    <listViews>
+        <fullName>simpli_lv__All_Print_Actions</fullName>
+        <columns>NAME</columns>
+        <columns>simpli_lv__Label__c</columns>
+        <columns>simpli_lv__Selected_Record_Visibility__c</columns>
+        <columns>simpli_lv__Apex_Class_Name__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>simpli_lv__Object_Type__c</columns>
+        <columns>simpli_lv__Is_Active__c</columns>
+        <columns>simpli_lv__Is_Hyperlink__c</columns>
+        <columns>simpli_lv__Permissions__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>simpli_lv__Primary_Key__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>simpli_lv__Apex_Class_Name__c</field>
+            <operation>equals</operation>
+            <value>ListViewActionPDF</value>
+        </filters>
+        <label>All Print Actions</label>
+    </listViews>
+    <nameField>
+        <displayFormat>LVA-{0}</displayFormat>
+        <label>List View Action Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>List View Actions</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>simpli_lv__Core</fullName>
+        <active>true</active>
+        <description>Indicates the action is for SFDC core list views</description>
+        <label>Core</label>
+        <picklistValues>
+            <picklist>simpli_lv__Flow_Type__c</picklist>
+            <values>
+                <fullName>Autolaunched Flow</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Screen Flow</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>simpli_lv__Permissions__c</picklist>
+            <values>
+                <fullName>Create</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Edit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Read</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>simpli_lv__Selected_Record_Visibility__c</picklist>
+            <values>
+                <fullName>Always displayed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Displayed if multiple records are selected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Displayed if no records are selected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Displayed if one or more records are selected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Displayed if one record is selected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Displayed if zero or one record is selected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>simpli_lv__Subtype__c</picklist>
+            <values>
+                <fullName>Manual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Metadata</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tooling</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>simpli_lv__Custom</fullName>
+        <active>true</active>
+        <description>Indicates the action is for custom list views</description>
+        <label>Custom</label>
+        <picklistValues>
+            <picklist>simpli_lv__Flow_Type__c</picklist>
+            <values>
+                <fullName>Autolaunched Flow</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Screen Flow</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>simpli_lv__Permissions__c</picklist>
+            <values>
+                <fullName>Create</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Edit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Read</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>simpli_lv__Selected_Record_Visibility__c</picklist>
+            <values>
+                <fullName>Always displayed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Displayed if multiple records are selected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Displayed if no records are selected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Displayed if one or more records are selected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Displayed if one record is selected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Displayed if zero or one record is selected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>simpli_lv__Subtype__c</picklist>
+            <values>
+                <fullName>Manual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Metadata</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tooling</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <searchResultsAdditionalFields>simpli_lv__Label__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>RECORDTYPE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>simpli_lv__Subtype__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>simpli_lv__Apex_Class_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>simpli_lv__Object_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>UPDATEDBY_USER</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

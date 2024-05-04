@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>smartlists__Action_Label__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Enter a text value or $Label­.CustomLabelName</inlineHelpText>
+        <label>Action Label</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>smartlists__Category__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Category</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Autolaunched Flow</fullName>
+                    <default>true</default>
+                    <label>Autolaunched Flow</label>
+                </value>
+                <value>
+                    <fullName>Screen Flow</fullName>
+                    <default>false</default>
+                    <label>Screen Flow</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>smartlists__Custom_Permission__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>API name of the custom permission required for executing this action. Leave blank if not controlled by custom permission</inlineHelpText>
+        <label>Custom Permission</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>smartlists__Display_Position__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Display Position</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>smartlists__Flow_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Flow Name</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>smartlists__List_Action_Availibility__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Define when the list buttons are enabled.
+- When Records are Selected in the List: the action button is only enabled when users select records in the list. The selected records are passed to the flow
+- When Records are Loaded: the action button is only enabled when records have been loaded in the list. The loaded records are passed to the flow
+- Always: the action button is enabled all the time. The loaded records are passed to the flow</inlineHelpText>
+        <label>List Action Availibility</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Selected</fullName>
+                    <default>true</default>
+                    <label>When Records are Selected</label>
+                </value>
+                <value>
+                    <fullName>Loaded</fullName>
+                    <default>false</default>
+                    <label>When Records are Loaded</label>
+                </value>
+                <value>
+                    <fullName>Always</fullName>
+                    <default>false</default>
+                    <label>Always</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>smartlists__Refresh_After_Execution__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Refresh After Execution</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>List</fullName>
+                    <default>true</default>
+                    <label>List</label>
+                </value>
+                <value>
+                    <fullName>Row</fullName>
+                    <default>false</default>
+                    <label>Row</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>smartlists__Screenflow_Modal_Height__c</fullName>
+        <defaultValue>400</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Height in pixel of the Screenflow modal</inlineHelpText>
+        <label>Screenflow Modal Height</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>smartlists__Smart_List_Definition__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Smart List Definition</label>
+        <referenceTo>smartlists__Smart_List_Definition__mdt</referenceTo>
+        <relationshipLabel>Smart List Actions</relationshipLabel>
+        <relationshipName>Smart_List_Actions</relationshipName>
+        <required>true</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>smartlists__Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Type</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>List Action</fullName>
+                    <default>true</default>
+                    <label>List Action</label>
+                </value>
+                <value>
+                    <fullName>Row Action</fullName>
+                    <default>false</default>
+                    <label>Row Action</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Smart List Action</label>
+    <pluralLabel>Smart List Actions</pluralLabel>
+    <validationRules>
+        <fullName>smartlists__Check_List_Availability</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK( TEXT(smartlists__List_Action_Availibility__c) ) &amp;&amp;  ISPICKVAL( smartlists__Type__c , &apos;List Action&apos;)</errorConditionFormula>
+        <errorDisplayField>smartlists__List_Action_Availibility__c</errorDisplayField>
+        <errorMessage>List Action Availability is required for List Actions</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>smartlists__Check_Refresh_Type</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL(smartlists__Type__c, &apos;List Action&apos;) &amp;&amp; ISPICKVAL(smartlists__Refresh_After_Execution__c, &apos;Row&apos;)</errorConditionFormula>
+        <errorDisplayField>smartlists__Refresh_After_Execution__c</errorDisplayField>
+        <errorMessage>Refresh type can only be List for List Actions</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>smartlists__Check_Screenflow_Modal_Height</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL(smartlists__Category__c , &apos;Screen Flow&apos;) &amp;&amp; ISBLANK(smartlists__Screenflow_Modal_Height__c )</errorConditionFormula>
+        <errorDisplayField>smartlists__Screenflow_Modal_Height__c</errorDisplayField>
+        <errorMessage>Screenflow Modal Height is required for Category Screen Flow</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ComposeGmail</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ComposeGmail</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ComposeGmail</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>LogCall</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>LogCall</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>LogCall</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>MailMerge</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>MailMerge</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>MailMerge</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SendEmail</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SendEmail</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SendEmail</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewAll</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewAll</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewAll</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>DNIS__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>DNIS</label>
+        <referenceTo>Phonenumber__c</referenceTo>
+        <relationshipLabel>Activities</relationshipLabel>
+        <relationshipName>Call_Tasks</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Five9ANI__c</fullName>
+        <description>ANI</description>
+        <externalId>false</externalId>
+        <label>Five9ANI</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Five9AgentId__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( Five9Agent__c , 
+    &quot;Awaldrop&quot;,&quot;4676094&quot;,
+    &quot;benr@bristolwindows.org&quot;,&quot;4618727&quot;,
+    &quot;jfuehrer@gmail.com&quot;,&quot;4618733&quot;,
+    &quot;MartyH&quot;, &quot;4618732&quot;,
+    &quot;OBRIEN&quot;,&quot;4618734&quot;,
+    &quot;Samanthafisher3092@gmail.com&quot;,&quot;4663608&quot;,
+    &quot;syncerfn@gmail.com&quot;,&quot;4764534&quot;,
+    &quot;&quot;)</formula>
+        <label>Five9AgentId</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Five9Agent__c</fullName>
+        <description>Agent who processed the call. User
+name that you created in the VCC
+Administrator application.</description>
+        <externalId>false</externalId>
+        <label>Five9Agent</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Five9CallType__c</fullName>
+        <externalId>false</externalId>
+        <label>Five9CallType</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Five9Campaign__c</fullName>
+        <description>Campaign name.</description>
+        <externalId>false</externalId>
+        <label>Five9Campaign</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Five9DNIS__c</fullName>
+        <description>DNIS</description>
+        <externalId>false</externalId>
+        <inlineHelpText>A dialed number Identification service (DNIS) is a service offered by telecom providers to their commercial customers, letting them know what number was dialed for each incoming call.</inlineHelpText>
+        <label>Five9DNIS</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Five9DistributionMode__c</fullName>
+        <description>How the interaction was distributed to
+the agent:
+- Automatic
+- Manual (chat and email only)</description>
+        <externalId>false</externalId>
+        <label>Five9DistributionMode</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Five9InteractionDuration__c</fullName>
+        <description>Time, in seconds, spent handling the
+interaction (any type, including voice).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Time, in seconds, spent handling the
+interaction (any type, including voice).</inlineHelpText>
+        <label>Five9InteractionDuration</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Five9MediaSubtype__c</fullName>
+        <description>Subtype of text interaction:
+- Standard Chat
+- Proactive Chat
+- Preview Chat
+- Generic conversation
+- SMS conversation
+- Rich Communication Services conversation</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Subtype of Texting interaction</inlineHelpText>
+        <label>Five9MediaSubtype</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Five9Queue__c</fullName>
+        <description>Name of queue holding the interaction
+(text interactions).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of queue holding the interaction
+(TEXT interactions).</inlineHelpText>
+        <label>Five9Queue</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Five9Recordings__c</fullName>
+        <externalId>false</externalId>
+        <label>Five9Recordings</label>
+        <required>false</required>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Five9TalkAndHoldTimeInSeconds__c</fullName>
+        <description>Time, in seconds, spent on hold and
+talking.</description>
+        <externalId>false</externalId>
+        <label>Five9TalkAndHoldTimeInSeconds</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Five9_Call_Time__c</fullName>
+        <externalId>false</externalId>
+        <label>Five9_Call_Time</label>
+        <required>false</required>
+        <type>Time</type>
+    </fields>
+    <fields>
+        <fullName>Five9__Five9SessionId__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Five9 Session Id</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Five9__Five9TaskType__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Five9 Task Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Call</fullName>
+                    <default>false</default>
+                    <label>Call</label>
+                </value>
+                <value>
+                    <fullName>Chat</fullName>
+                    <default>false</default>
+                    <label>Chat</label>
+                </value>
+                <value>
+                    <fullName>Email</fullName>
+                    <default>false</default>
+                    <label>Email</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Five9end_timestamp__c</fullName>
+        <externalId>false</externalId>
+        <label>Five9end_timestamp</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Five9start_timestamp__c</fullName>
+        <externalId>false</externalId>
+        <label>Five9start_timestamp</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Property__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Property</label>
+        <referenceTo>RetailStore</referenceTo>
+        <relationshipLabel>Activities</relationshipLabel>
+        <relationshipName>Activities</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SubTaskResult__c</fullName>
+        <externalId>false</externalId>
+        <label>SubTaskResult</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Task_Result__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetName>Result_Level_3</valueSetName>
+            <valueSettings>
+                <controllingFieldValue>Cash</controllingFieldValue>
+                <controllingFieldValue>Finance</controllingFieldValue>
+                <valueName>Paid</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cash</controllingFieldValue>
+                <valueName>Pickup Check</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unqualified</controllingFieldValue>
+                <valueName>Renter</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unqualified</controllingFieldValue>
+                <valueName>Minor</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unqualified</controllingFieldValue>
+                <valueName>Senior</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unqualified</controllingFieldValue>
+                <valueName>Deceased</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unqualified</controllingFieldValue>
+                <valueName>Out of Territory</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unqualified</controllingFieldValue>
+                <valueName>Can&apos;t Do</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unqualified</controllingFieldValue>
+                <valueName>New Windows</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unqualified</controllingFieldValue>
+                <valueName>Language Barrier</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unqualified</controllingFieldValue>
+                <controllingFieldValue>No Interest</controllingFieldValue>
+                <controllingFieldValue>Closed / Lost</controllingFieldValue>
+                <valueName>Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Finance</controllingFieldValue>
+                <valueName>Nebraska Energy Loan</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Finance</controllingFieldValue>
+                <valueName>Personal</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Finance</controllingFieldValue>
+                <valueName>Zero Percent Card</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Finance</controllingFieldValue>
+                <valueName>Other Financing</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>No Interest</controllingFieldValue>
+                <valueName>Competitor Preference</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>No Interest</controllingFieldValue>
+                <valueName>Budget</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>No Interest</controllingFieldValue>
+                <valueName>Moving</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>No Interest</controllingFieldValue>
+                <valueName>General No Interest</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pending</controllingFieldValue>
+                <controllingFieldValue>Complete</controllingFieldValue>
+                <valueName>Pending</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unreachable</controllingFieldValue>
+                <valueName>No Time</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unreachable</controllingFieldValue>
+                <valueName>One Leg</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unreachable</controllingFieldValue>
+                <valueName>NCY</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unreachable</controllingFieldValue>
+                <valueName>No Show</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unreachable</controllingFieldValue>
+                <valueName>Bad Contact Info</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Unreachable</controllingFieldValue>
+                <valueName>Non Responder</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Follow Up</controllingFieldValue>
+                <controllingFieldValue>Re/Set</controllingFieldValue>
+                <valueName>Visit Set</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Follow Up</controllingFieldValue>
+                <valueName>Call to Re/Set</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Follow Up</controllingFieldValue>
+                <valueName>Not Ready</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Complete</controllingFieldValue>
+                <valueName>Complete</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Confirmed</controllingFieldValue>
+                <valueName>Confirmed</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Closed / Lost</controllingFieldValue>
+                <valueName>DNC</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Closed / Lost</controllingFieldValue>
+                <valueName>Purchased Elsewhere</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Task_Result__c</fullName>
+        <externalId>false</externalId>
+        <label>Task Result</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Task_Type__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetName>Result_Level_2</valueSetName>
+            <valueSettings>
+                <controllingFieldValue>General</controllingFieldValue>
+                <controllingFieldValue>Confirm</controllingFieldValue>
+                <controllingFieldValue>Re/Set</controllingFieldValue>
+                <controllingFieldValue>Follow Up</controllingFieldValue>
+                <controllingFieldValue>Log</controllingFieldValue>
+                <controllingFieldValue>Result</controllingFieldValue>
+                <controllingFieldValue>Finance</controllingFieldValue>
+                <valueName>Pending</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>General</controllingFieldValue>
+                <controllingFieldValue>Finance</controllingFieldValue>
+                <valueName>Complete</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Confirm</controllingFieldValue>
+                <controllingFieldValue>Re/Set</controllingFieldValue>
+                <controllingFieldValue>Follow Up</controllingFieldValue>
+                <controllingFieldValue>Log</controllingFieldValue>
+                <controllingFieldValue>Result</controllingFieldValue>
+                <valueName>Unqualified</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Confirm</controllingFieldValue>
+                <controllingFieldValue>Re/Set</controllingFieldValue>
+                <controllingFieldValue>Follow Up</controllingFieldValue>
+                <controllingFieldValue>Log</controllingFieldValue>
+                <controllingFieldValue>Result</controllingFieldValue>
+                <valueName>No Interest</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Confirm</controllingFieldValue>
+                <controllingFieldValue>Re/Set</controllingFieldValue>
+                <controllingFieldValue>Follow Up</controllingFieldValue>
+                <controllingFieldValue>Log</controllingFieldValue>
+                <controllingFieldValue>Result</controllingFieldValue>
+                <valueName>Unreachable</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Confirm</controllingFieldValue>
+                <controllingFieldValue>Re/Set</controllingFieldValue>
+                <controllingFieldValue>Follow Up</controllingFieldValue>
+                <controllingFieldValue>Log</controllingFieldValue>
+                <controllingFieldValue>Result</controllingFieldValue>
+                <valueName>Follow Up</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Confirm</controllingFieldValue>
+                <controllingFieldValue>Re/Set</controllingFieldValue>
+                <controllingFieldValue>Follow Up</controllingFieldValue>
+                <controllingFieldValue>Log</controllingFieldValue>
+                <controllingFieldValue>Result</controllingFieldValue>
+                <valueName>Re/Set</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Confirm</controllingFieldValue>
+                <controllingFieldValue>Re/Set</controllingFieldValue>
+                <controllingFieldValue>Follow Up</controllingFieldValue>
+                <controllingFieldValue>Log</controllingFieldValue>
+                <controllingFieldValue>Result</controllingFieldValue>
+                <valueName>Closed / Lost</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Confirm</controllingFieldValue>
+                <controllingFieldValue>Re/Set</controllingFieldValue>
+                <controllingFieldValue>Log</controllingFieldValue>
+                <valueName>Confirmed</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Result</controllingFieldValue>
+                <valueName>Cash</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Result</controllingFieldValue>
+                <valueName>Finance</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Task_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Task Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>General</fullName>
+                    <default>false</default>
+                    <label>General</label>
+                </value>
+                <value>
+                    <fullName>Confirm</fullName>
+                    <default>false</default>
+                    <label>Confirm</label>
+                </value>
+                <value>
+                    <fullName>Re/Set</fullName>
+                    <default>false</default>
+                    <label>Re/Set</label>
+                </value>
+                <value>
+                    <fullName>Follow Up</fullName>
+                    <default>false</default>
+                    <label>Follow Up</label>
+                </value>
+                <value>
+                    <fullName>Log</fullName>
+                    <default>true</default>
+                    <label>Log</label>
+                </value>
+                <value>
+                    <fullName>Result</fullName>
+                    <default>false</default>
+                    <label>Result</label>
+                </value>
+                <value>
+                    <fullName>Finance</fullName>
+                    <default>false</default>
+                    <label>Finance</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Visit__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Visit</label>
+        <referenceTo>Visit</referenceTo>
+        <relationshipLabel>Confirmation</relationshipLabel>
+        <relationshipName>Confirmation</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>first_name__c</fullName>
+        <description>FIVE9 first_name (contact variable)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>FIVE9 first_name (contact variable)</inlineHelpText>
+        <label>first_name</label>
+        <length>20</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>five9_Contact__c</fullName>
+        <externalId>false</externalId>
+        <label>five9 Contact</label>
+        <length>80</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>last_name__c</fullName>
+        <description>FIVE9 last_name field (Contact Variable).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>FIVE9 last_name field (Contact Variable).</inlineHelpText>
+        <label>last_name</label>
+        <length>30</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__BaseObjectId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Maps Base Object</label>
+        <referenceTo>maps__BaseObject__c</referenceTo>
+        <relationshipLabel>Activities</relationshipLabel>
+        <relationshipName>BaseObjectIds</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>maps__LayerId__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Layer Id</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__WA_AdvRouteWaypoint__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>This is the default lookup to associate the Advanced Route Waypoint</description>
+        <externalId>false</externalId>
+        <label>Maps Advanced Route Waypoint</label>
+        <referenceTo>maps__AdvRouteWaypoint__c</referenceTo>
+        <relationshipLabel>Activities</relationshipLabel>
+        <relationshipName>Activities</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <listViews>
+        <fullName>MyActivities</fullName>
+        <columns>ACTIVITY_SUBTYPE</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>EVENT.LOCATION</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Activities</label>
+    </listViews>
+    <listViews>
+        <fullName>MyDelegatedActivities</fullName>
+        <filterScope>Delegated</filterScope>
+        <label>My Delegated Activities</label>
+    </listViews>
+    <listViews>
+        <fullName>MyTeamsActivities</fullName>
+        <filterScope>Team</filterScope>
+        <label>My Team&apos;s Activities</label>
+    </listViews>
+    <listViews>
+        <fullName>TodaysTasks</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>TASK.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>lessThan</operation>
+            <value>TOMORROW</value>
+        </filters>
+        <label>Today&apos;s Tasks</label>
+    </listViews>
+    <listViews>
+        <fullName>UpcomingEvents</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>greaterThan</operation>
+            <value>YESTERDAY</value>
+        </filters>
+        <label>Upcoming Events</label>
+    </listViews>
+    <searchLayouts>
+        <excludedStandardButtons>NewTask</excludedStandardButtons>
+        <excludedStandardButtons>NewEvent</excludedStandardButtons>
+        <searchResultsAdditionalFields>TASK.SUBJECT</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.WHO_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.WHAT_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.DUE_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.RECORDTYPE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Five9CallType__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>
